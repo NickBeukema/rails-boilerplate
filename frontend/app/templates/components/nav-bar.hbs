@@ -1,0 +1,20 @@
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+  <button class="navbar-toggler navbar-toggler-right" {{ action 'toggleMobileNav' }} type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  {{link-to 'Unify' 'dashboard' classNames='navbar-brand'}}
+  <div class="collapse navbar-collapse {{showingClass}}" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        {{link-to 'Style Guide' 'style-guide' classNames='nav-link'}}
+      </li>
+      <li class="nav-item">
+        {{link-to 'Page 2' 'page2' classNames='nav-link'}}
+      </li>
+    </ul>
+    <div class="navbar-text float-xs-right">
+      {{currentUser.user.email}}
+      (<a href="#" class="app-logout" {{action 'logout'}}>Logout</a>)
+    </div>
+  </div>
+</nav>

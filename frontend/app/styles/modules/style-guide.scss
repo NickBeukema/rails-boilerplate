@@ -1,0 +1,18 @@
+.style-guide {
+  border: 1px solid #ccc;
+  padding: 40px 10px 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  position: relative;
+}
+.style-guide__label {
+  font-family: Monospace;
+  padding: 4px 7px;
+  background-color: #ccc;
+  color: #0574ba;
+  border-top-left-radius: 3px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}

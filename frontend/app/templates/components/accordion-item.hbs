@@ -1,0 +1,23 @@
+<div class="card">
+  <div class="card-header" role="tab">
+    <h5 class="mb-0">
+      <a {{action 'toggleAccordion'}} data-toggle="collapse" data-parent="#accordion" href="#" aria-expanded="true">
+        {{title}}
+      </a>
+      {{#if hasErrors}}
+        <span class="badge badge-pill badge-danger ml-2">{{errorCount}}</span>
+      {{/if}}
+      <div class="float-right text-right">
+        {{#if hasLinkText}}
+        <small><a {{action 'clickLinkAction'}}href="#">{{linkText}}</a></small>
+        {{/if}}
+      </div>
+    </h5>
+  </div>
+
+  <div class="app-accordion-item collapse {{if defaultOpen 'show'}}" role="tabpanel">
+    <div class="card-block">
+      {{yield}}
+    </div>
+  </div>
+</div>
