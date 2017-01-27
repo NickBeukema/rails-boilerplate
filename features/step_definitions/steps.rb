@@ -12,6 +12,7 @@ Given(/^I am an administrator$/) do
 end
 
 Given(/^I login as an admin user$/) do
+  repository.administrator
   admin_login(my.user)
 end
 

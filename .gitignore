@@ -1,0 +1,5 @@
+*.swp
+*.swo
+features/artifacts*
+log
+tmp
